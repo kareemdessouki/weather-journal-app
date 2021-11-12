@@ -77,8 +77,8 @@ const fetchData = async () => {
 	const noEntriesElm = document.getElementById("noEntries");
 	const res = await fetch("/getData");
 	try {
-		const data = await res.json();
-		if(data) {
+		const noEntriesElm = document.getElementById("emptyEntry");
+			if(data) {
 			// Hide text
 			noEntriesElm.classList.add("hide");
 
